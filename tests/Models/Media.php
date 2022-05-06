@@ -1,8 +1,8 @@
 <?php
 
-namespace Optix\Media\Tests\Models;
+namespace Auresbug\Media\Tests\Models;
 
-use Optix\Media\Models\Media as BaseMedia;
+use Auresbug\Media\Models\Media as BaseMedia;
 
 class Media extends BaseMedia
 {

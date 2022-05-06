@@ -17,7 +17,7 @@ composer require optix/media
 Once installed, you should publish the provided assets to create the necessary migration and config files.
 
 ```bash
-php artisan vendor:publish --provider="Optix\Media\MediaServiceProvider"
+php artisan vendor:publish --provider="Auresbug\Media\MediaServiceProvider"
 ```
 
 ## Key concepts
@@ -29,12 +29,12 @@ There are a few key concepts that should be understood before continuing:
 
 * Media is uploaded as its own entity. It does not belong to another model in the system when it's created, so items can
   be managed independently (which makes it the perfect engine for a media manager).
-  
+
 * Media must be attached to a model for an association to be made.
 
 * Media items are bound to "groups". This makes it easy to associate multiple types of media to a model. For
   example, a model might have an "images" group and a "documents" group.
-  
+
 * You can manipulate images using conversions. You can specify conversions to be performed when a media item is
   associated to a model. For example, you can register a "thumbnail" conversion to run when images are attached to a
   model's "gallery" group.
@@ -46,7 +46,7 @@ There are a few key concepts that should be understood before continuing:
 
 ### Upload media
 
-You should use the `Optix\Media\MediaUploader` class to handle file uploads.
+You should use the `Auresbug\Media\MediaUploader` class to handle file uploads.
 
 By default, this class will update files to the disk specified in the media config. It saves them as a sanitised
 version of their original file name, and creates a media record in the database with the file's details.
@@ -68,7 +68,7 @@ $media = MediaUploader::fromFile($file)
 
 ### Associate media with a model
 
-In order to associate a media item with a model, you must first include the `Optix\Media\HasMedia` trait.
+In order to associate a media item with a model, you must first include the `Auresbug\Media\HasMedia` trait.
 
 ```php
 class Post extends Model
@@ -106,7 +106,7 @@ $post->detachMedia($media);
 
 // Detach all the media in a group
 $post->clearMediaGroup('your-group');
-``` 
+```
 
 If you want to delete a media item, you should do it the same way you would for any other model in your application.
 
@@ -128,7 +128,7 @@ $post->getMedia();
 // All media in a custom group
 $post->getMedia('custom-group');
 
-// First media item in the default group 
+// First media item in the default group
 $post->getFirstMedia();
 
 // First media item in a custom group
@@ -155,7 +155,7 @@ To get started, you should first register a conversion in one of your applicatio
 
 ```php
 use Intervention\Image\Image;
-use Optix\Media\Facades\Conversion;
+use Auresbug\Media\Facades\Conversion;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -175,7 +175,7 @@ attached to your model.
 class Post extends Model
 {
     use HasMedia;
-    
+
     public function registerMediaGroups()
     {
         $this->addMediaGroup('gallery')
@@ -204,7 +204,7 @@ The most popular of which are:
 There are a few key differences between this package and the ones listed above. Our package was built to power media
 managers, and make it easy to perform image manipulations. This is better represented by the comparison table below:
 
-| Comparison                      | Spatie              | Plank        | Optix                |
+| Comparison                      | Spatie              | Plank        | Auresbug                |
 |---------------------------------|---------------------|--------------|----------------------|
 | **Relationship type**           | One to many         | Many to many | Many to many         |
 | **Provides image manipulation** | Yes                 | No           | Yes                  |

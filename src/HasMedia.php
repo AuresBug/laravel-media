@@ -1,11 +1,11 @@
 <?php
 
-namespace Optix\Media;
+namespace Auresbug\Media;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use Optix\Media\Jobs\PerformConversions;
-use Optix\Media\Models\Media;
+use Auresbug\Media\Jobs\PerformConversions;
+use Auresbug\Media\Models\Media;
 
 trait HasMedia
 {

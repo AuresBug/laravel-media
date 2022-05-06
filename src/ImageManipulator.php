@@ -1,11 +1,11 @@
 <?php
 
-namespace Optix\Media;
+namespace Auresbug\Media;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Intervention\Image\ImageManager;
-use Optix\Media\Exceptions\InvalidConversion;
-use Optix\Media\Models\Media;
+use Auresbug\Media\Exceptions\InvalidConversion;
+use Auresbug\Media\Models\Media;
 
 class ImageManipulator
 {

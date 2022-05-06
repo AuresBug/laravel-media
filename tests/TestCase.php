@@ -1,8 +1,8 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
-use Optix\Media\MediaServiceProvider;
+use Auresbug\Media\MediaServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase

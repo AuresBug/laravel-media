@@ -1,15 +1,15 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
 use Illuminate\Filesystem\Filesystem;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 use Mockery;
-use Optix\Media\ConversionRegistry;
-use Optix\Media\Exceptions\InvalidConversion;
-use Optix\Media\ImageManipulator;
-use Optix\Media\Models\Media;
+use Auresbug\Media\ConversionRegistry;
+use Auresbug\Media\Exceptions\InvalidConversion;
+use Auresbug\Media\ImageManipulator;
+use Auresbug\Media\Models\Media;
 
 class ImageManipulatorTest extends TestCase
 {

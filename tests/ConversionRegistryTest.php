@@ -1,9 +1,9 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
-use Optix\Media\ConversionRegistry;
-use Optix\Media\Exceptions\InvalidConversion;
+use Auresbug\Media\ConversionRegistry;
+use Auresbug\Media\Exceptions\InvalidConversion;
 
 class ConversionRegistryTest extends TestCase
 {

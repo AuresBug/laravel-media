@@ -1,9 +1,9 @@
 <?php
 
-namespace Optix\Media\Facades;
+namespace Auresbug\Media\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Optix\Media\ConversionRegistry;
+use Auresbug\Media\ConversionRegistry;
 
 class Conversion extends Facade
 {

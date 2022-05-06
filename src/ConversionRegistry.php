@@ -1,8 +1,8 @@
 <?php
 
-namespace Optix\Media;
+namespace Auresbug\Media;
 
-use Optix\Media\Exceptions\InvalidConversion;
+use Auresbug\Media\Exceptions\InvalidConversion;
 
 class ConversionRegistry
 {

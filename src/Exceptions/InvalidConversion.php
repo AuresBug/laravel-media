@@ -1,6 +1,6 @@
 <?php
 
-namespace Optix\Media\Exceptions;
+namespace Auresbug\Media\Exceptions;
 
 use Exception;
 

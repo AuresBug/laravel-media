@@ -1,6 +1,6 @@
 <?php
 
-namespace Optix\Media\Models;
+namespace Auresbug\Media\Models;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Database\Eloquent\Model;

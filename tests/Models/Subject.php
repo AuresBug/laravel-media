@@ -1,9 +1,9 @@
 <?php
 
-namespace Optix\Media\Tests\Models;
+namespace Auresbug\Media\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Optix\Media\HasMedia;
+use Auresbug\Media\HasMedia;
 
 class Subject extends Model
 {

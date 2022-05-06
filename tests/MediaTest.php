@@ -1,10 +1,10 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
 use Illuminate\Filesystem\Filesystem;
 use Mockery;
-use Optix\Media\Models\Media;
+use Auresbug\Media\Models\Media;
 
 class MediaTest extends TestCase
 {

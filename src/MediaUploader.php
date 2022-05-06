@@ -1,6 +1,6 @@
 <?php
 
-namespace Optix\Media;
+namespace Auresbug\Media;
 
 use Illuminate\Http\UploadedFile;
 

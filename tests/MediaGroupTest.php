@@ -1,8 +1,8 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
-use Optix\Media\MediaGroup;
+use Auresbug\Media\MediaGroup;
 
 class MediaGroupTest extends TestCase
 {

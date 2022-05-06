@@ -1,14 +1,14 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Queue;
-use Optix\Media\Jobs\PerformConversions;
-use Optix\Media\Models\Media;
-use Optix\Media\Tests\Models\Subject;
+use Auresbug\Media\Jobs\PerformConversions;
+use Auresbug\Media\Models\Media;
+use Auresbug\Media\Tests\Models\Subject;
 
 class HasMediaTest extends TestCase
 {

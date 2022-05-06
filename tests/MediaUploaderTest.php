@@ -1,13 +1,13 @@
 <?php
 
-namespace Optix\Media\Tests;
+namespace Auresbug\Media\Tests;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
-use Optix\Media\MediaUploader;
-use Optix\Media\Models\Media;
-use Optix\Media\Tests\Models\Media as CustomMedia;
+use Auresbug\Media\MediaUploader;
+use Auresbug\Media\Models\Media;
+use Auresbug\Media\Tests\Models\Media as CustomMedia;
 
 class MediaUploaderTest extends TestCase
 {
